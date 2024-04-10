@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h1{
+    text-align: center;
+    color: blueviolet;
+     font-size: 50px;
+     text-shadow: 0 0 5px green;
+}
+form{
+    display: flex;
+    justify-content: center;margin: 30px 30px;
+
+   
+  
+
+}
+form #searchimg{
+    width: 20%;
+    height: 30px;
+    font-size: 25px;
+}
+form #searchbutton{
+   width: auto;
+    margin-left: 5px;
+    background-color: rgb(18, 109, 63);
+    color: aliceblue;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    padding: 5px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    
+}
+form #searchbutton:active{
+    color: black;
+
+}
+
+.searchresults{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.searchresult{
+    margin-bottom: 60px;
+    width: 30%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 3px 3px black;
+    overflow: hidden;
+}
+.searchresult img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+transition: .3s ease-in-out;
+}
+.searchresult:hover img{
+    opacity: 0.8;
+   
+
+}
+.searchresult a{
+     font-size: 20px;
+     text-decoration: none;
+     color: rgb(27, 71, 57);
+     text-transform: capitalize;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.searchresult a:hover{
+    color: blue;
+}
+#showmore{
+    margin-left: 5px;
+    background-color: rgb(26, 117, 236);
+    color: aliceblue;
+    border-radius: 10px;
+    box-shadow: 0 3px 3px gray;
+    border: none;
+    font-size: 30px;
+    padding: 5px;
+    cursor: pointer;
+    display: none;
+    text-align: center;
+    margin-bottom: 20px;
+   
+
+}
+#showmore:active{
+    background-color: green;
+    padding: 7px;
+}
+@media screen and (max-width: 768px){
+    .searchresults{
+padding: 20px;
+    }
+    .searchresult{
+        width: 45%;
+    }
+    
+}
+@media screen and (max-width: 480px){
+    .searchresult{
+        width: 100%;
+    }
+    form #searchbutton{
+        width: auto;
+    }
+    
+}
+@media screen and (max-width: 480px){
+    form #searchimg{
+        width: 50%;
+    }}
+    @media screen and (max-width: 768px){
+        .searchresults{
+    padding: 20px;
+        }
+       form #searchbutton{
+            width: auto;
+        }
+        form #searchimg{
+            width: 50%;
+        }}

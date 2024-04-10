@@ -52,7 +52,7 @@ form #searchbutton:active{
     margin-bottom: 60px;
     width: 30%;
     height: 100%;
-    border-radius: 5px;
+    border-radius: 4px;
     box-shadow: 0 3px 3px black;
     overflow: hidden;
 }
